@@ -189,7 +189,7 @@ namespace PDollarGestureRecognizer
             }
 
             if (numPoints == n - 1) // sometimes we fall a rounding-error short of adding the last point, so add it if so
-                newPoints[numPoints++] = new Point(points[points.Length - 1].X, points[points.Length - 1].Y, points[points.Length - 1].Y, points[points.Length - 1].StrokeID);
+                newPoints[numPoints++] = new Point(points[points.Length - 1].X, points[points.Length - 1].Y, points[points.Length - 1].Z, points[points.Length - 1].StrokeID);
             return newPoints;
         }
 
